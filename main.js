@@ -36,7 +36,7 @@ function applyCustomCode(){
 		var domTag = document.createElement('style');
 		domTag.innerText = CustomCode.code;
 	}
-	else if('style' == CustomCode.codeType ){
+	else if('css' == CustomCode.codeType ){
 		var domTag = document.createElement('style');
 		domTag.innerText = CustomCode.code;
 	}
@@ -46,8 +46,3 @@ function applyCustomCode(){
 	}
 	document.body.appendChild( domTag );
 }
-
-
-// var applyBtn = document.querySelector('.apply-btn').addEventListener('click', function(){
-// 	document.querySelector('.textarea').classList.toggle('open');
-// });
