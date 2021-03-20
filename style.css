@@ -1,0 +1,145 @@
+.main-area {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+}
+
+.main-area > div {
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+
+.main-area .set-area {
+  border-right: 2px solid #ddd;
+}
+
+.select-code-type {
+    margin: 0 0 10px 0;
+}
+
+button {
+	background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.textarea {
+	display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: hsl(0deg 0% 0% / 41%);
+	transform: scale(0);
+	transition: all 0.4s;
+}
+
+.textarea.open {
+	transform: scale(1);
+}
+.textarea-inner {
+    display: inline-flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 24px;
+    align-items: flex-start;
+    border: 6px solid #2196f3;
+}
+.textarea textarea {
+    width: 500px;
+    height: 370px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.submit {
+	background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+
+/*  */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+    display: inline-flex;
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+  /* width: 60px;
+	height: 34px; */
+}
+
+/* Hide default HTML checkbox */
+.switch .switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: relative;
+  cursor: pointer;
+  border-radius: 34px;
+  /* top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; */
+  width: 60px;
+  height: 34px;
+  display: inline-block;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.switch-input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch-input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
