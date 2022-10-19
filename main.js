@@ -21,4 +21,6 @@ function applyCustomCode() {
     }
     document.body.appendChild(t);
 }
-switchInput.addEventListener("change", openPopup), applyBtn.addEventListener("click", applyCustomCode), submitBtn.addEventListener("click", storeValue);
+switchInput.addEventListener("change", openPopup);
+applyBtn.addEventListener("click", applyCustomCode); 
+submitBtn.addEventListener("click", storeValue);
